@@ -1,0 +1,55 @@
+{
+  "name": "slackpub",
+  "version": "1.0.0",
+  "description": "API for managing public Slack communities",
+  "main": "index.js",
+  "module": "app/index.js",
+  "scripts": {
+    "start": "node bin/slackpub",
+    "watch": "nodemon bin/slackpub",
+    "lint": "eslint .",
+    "doc:toc": "markdown-toc readme.md -i --maxdepth=3",
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">=8.6"
+  },
+  "bin": {
+    "slackpub": "./bin/slackpub"
+  },
+  "author": "Timo Mämecke <timo@maemecke.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "dotenv": "^6.2.0",
+    "errorhandler": "^1.5.0",
+    "esm": "^3.1.4",
+    "express": "^4.16.4",
+    "got": "^9.6.0",
+    "helmet": "^3.15.0",
+    "http-errors": "^1.7.1",
+    "memoizee": "^0.4.14"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "jest": "^24.0.0",
+    "markdown-toc": "^1.2.0",
+    "nock": "^10.0.6",
+    "nodemon": "^1.18.9",
+    "prettier": "^1.16.1",
+    "supertest": "^3.4.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": [
+      "./setup-tests.js"
+    ],
+    "transform": {
+      "\\.m?js$": "esm"
+    }
+  }
+}
