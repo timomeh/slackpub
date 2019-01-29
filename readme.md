@@ -10,12 +10,13 @@ For available API routes, check out the [API Documentation](#API-Documentation).
 <!-- toc -->
 
 - [Usage](#usage)
-  - [Environment Variables](#environment-variables)
+  * [Environment Variables](#environment-variables)
 - [API Documentation](#api-documentation)
-  - [`POST /api/invitations`](#post-apiinvitations)
-  - [`GET /api/stats`](#get-apistats)
-  - [Errors](#errors)
+  * [`POST /api/invitations`](#post-apiinvitations)
+  * [`GET /api/stats`](#get-apistats)
+  * [Errors](#errors)
 - [Contribute](#contribute)
+- [License](#license)
 
 <!-- tocstop -->
 
